@@ -3,13 +3,13 @@
     <head>
         {% block head %}
             {% include "partials/head.html" | safe %}
-        {% endblock %}
+        {% endblock head %}
     </head>
     <body>
         <header>
             {% block header %}
                 {% include "partials/header.html" %}
-            {% endblock %}
+            {% endblock header %}
         </header>
         
         <main role="main" class="container">

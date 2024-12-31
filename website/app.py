@@ -6,6 +6,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/map')
+def map():
+    return render_template('page/map.html')
+
 @app.route('/docs')
 def docs():
     return render_template('page/docs.html')
